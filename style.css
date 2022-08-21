@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+
+#dark {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#formElement {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 30%;
+    width: 40%;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1;
+    opacity: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-rows: repeat(4, 1 fr);
+    list-style: none;
+    gap: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.submit {
+    height: auto;
+    width: auto;
+    background-color: rgb(0, 8, 255);
+    color: white;
+    font-size: 2em;
+    border: 0px;
+    border-radius: 8px;
+}
+
+.submit:hover {
+    background-color: rgb(0, 4, 132);
+    cursor: pointer;
+}
+
+.submit:active {
+    background-color: rgb(0, 5, 163);
+}
+
+.cancel {
+    height: auto;
+    width: auto;
+    background-color: rgb(0, 8, 255);
+    color: white;
+    font-size: 2em;
+    border: 0px;
+    border-radius: 8px;
+}
+
+.cancel:hover {
+    background-color: rgb(0, 4, 132);
+    cursor: pointer;
+}
+
+.cancel:active {
+    background-color: rgb(0, 5, 163);
+}
+
+#newBtn {
+    height: 50%;
+    width: auto;
+    background-color: rgb(0, 8, 255);
+    color: white;
+    font-size: 2em;
+    border: 0px;
+    border-radius: 8px;
+}
+
+#newBtn:hover {
+    background-color: rgb(0, 4, 132);
+    cursor: pointer;
+}
+
+#newBtn:active {
+    background-color: rgb(0, 5, 163);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    font-size: 1em;
+    gap: 20px;
+}
+
+
+
+.bookshelf {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(100px, auto)) / repeat(auto-fit, minmax(200px, auto));
+    gap: 10px;
+}
+
+.book {
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
